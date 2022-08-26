@@ -2,7 +2,7 @@ server:
   port: 2010
 spring:
   application:
-    name: zuul-server
+    name: zuul-server999
 eureka:
   client:
     service-url:
