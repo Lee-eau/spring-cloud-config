@@ -2,7 +2,7 @@ server:
   port: 1030
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:1020/eureka
   instance:
     prefer-ip-address: true  #使用ip注册到Eureka
