@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1020/eureka/
+      defaultZone: http://localhost:1020/eureka
   instance:
     prefer-ip-address: true  #使用ip注册到Eureka
     instance-id: system-server:2010  #指定客户端实例的ID
