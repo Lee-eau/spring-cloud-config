@@ -8,6 +8,5 @@ eureka:
     prefer-ip-address: true  #使用ip注册到Eureka
     instance-id: oss-server:4010 #指定客户端实例的ID
 spring:
-
   application:
     name: oss-server
