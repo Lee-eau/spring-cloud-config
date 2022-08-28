@@ -1,0 +1,19 @@
+server:
+  port: 3010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1020/eureka?characterEncoding=UTF8&autoReconnect=true&useSSL=false
+  instance:
+    prefer-ip-address: true  #使用ip注册到Eureka
+    instance-id: auth-server:3010 #指定客户端实例的ID
+spring:
+  datasource:
+    username: root
+    password: TaylorSwift
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///hrm_auth
+  application:
+    name: auth-server
+mybatis-plus:
+  type-aliases-package: cn.lee.hrm.domain,cn.lee.hrm.query
