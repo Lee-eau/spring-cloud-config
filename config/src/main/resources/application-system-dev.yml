@@ -15,3 +15,5 @@ spring:
     url: jdbc:mysql:///hrm_system
   application:
     name: system-server
+mybatis-plus:
+  type-aliases-package: com.lee.hrm.domain,com.lee.hrm.query
