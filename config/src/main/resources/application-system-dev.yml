@@ -16,4 +16,4 @@ spring:
   application:
     name: system-server
 mybatis-plus:
-  type-aliases-package: com.lee.hrm.domain,com.lee.hrm.query
+  type-aliases-package: cn.lee.hrm.domain,cn.lee.hrm.query
