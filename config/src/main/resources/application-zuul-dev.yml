@@ -12,6 +12,8 @@ zuul:
   routes:
     system.serviceId: system-server
     system.path: "/system/**"
+    auth.serviceId: auth-server
+    auth.path: "/auth/**"
   ignored-services: "*" #哪些服务不能通过服务名访问,*表示所有的服务
   prefix: "/hrm" #所有访问地址都加一个前缀
 ribbon:
