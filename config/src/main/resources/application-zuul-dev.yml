@@ -9,8 +9,11 @@ eureka:
     instance-id: zuul-server:1030  #指定客户端实例的ID
 zuul:
   retryable: true #是否开启重试功能
+  routes:
+    system.serviceId: system-server
+    system.path: /system/**
   ignored-services: "*" #哪些服务不能通过服务名访问,*表示所有的服务
-  prefix: "/services" #所有访问地址都加一个前缀
+  prefix: "/hrm" #所有访问地址都加一个前缀
 ribbon:
   MaxAutoRetries: 1 #对当前服务的重试次数
   eager-load.enabled: true
