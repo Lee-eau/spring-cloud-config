@@ -1,0 +1,12 @@
+server:
+  port: 2013
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1020/eureka
+  instance:
+    prefer-ip-address: true  #使用ip注册到Eureka
+    instance-id: search-server:2013 #指定客户端实例的ID
+spring:
+  application:
+    name: search-server
